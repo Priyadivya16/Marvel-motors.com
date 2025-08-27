@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marvel Motors - Service</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .sidebar {
+      width: 150px;
+      background-color: #111;
+      color: white;
+      padding: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 10px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      padding: 10px 0;
+      text-decoration: none;
+      border-bottom: 1px solid #333;
+    }
+
+    .sidebar a:hover {
+      background-color: #333;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .menu-toggle {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background-color: #111;
+      color: white;
+      border: none;
+      font-size: 24px;
+      padding: 10px;
+      cursor: pointer;
+      display: none;
+      z-index: 10;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        position: absolute;
+        height: 100%;
+        transform: translateX(-100%);
+      }
+
+      .sidebar.active {
+        transform: translateX(0);
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .main-content {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cheeseburger Button -->
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+  <!-- Left Side Navigation -->
+  <div class="sidebar" id="sidebar">
+    <h2>Marvel Motors</h2>
+        <a href="homem.html" target="contentFrame">Home</a>
+    <a href="service3.html" target="contentFrame">Service</a>
+    <a href="About2.html" target="contentFrame">About</a>
+    <a href="Gallery marvel.html" target="contentFrame">Gallery</a>
+<a href="feed.html" target="contentFrame">Feedback</a>
+    <a href="FAQ.html" target="contentFrame">FAQ</a>
+
+
+  </div>
+
+  <!-- Right Side Content -->
+  <div class="main-content">
+    <iframe name="contentFrame" src="homem.html"></iframe>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>

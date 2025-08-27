@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marvel Motors - FAQ</title>
+  <style>
+    body {
+      background: whitesmoke;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #f44336;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto 50px auto;
+    }
+
+    .faq-item {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #444;
+      border-radius: 8px;
+      margin: 10px 0;
+      padding: 15px;
+      cursor: pointer;
+    }
+
+    .faq-question {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .faq-answer {
+      margin-top: 10px;
+      display: none;
+      color: #ccc;
+    }
+
+    .ask-form {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      max-width: 500px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #fff;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #1a237e;
+      color: white;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0d133d;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Frequently Asked Questions (FAQ)</h1>
+
+  <div class="faq-container">
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div class="faq-question">What services does Marvel Motors offer?</div>
+      <div class="faq-answer">We offer general repairs, oil change, engine diagnostics, painting, and more.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div class="faq-question">Where is Marvel Motors located?</div>
+      <div class="faq-answer">We are located at XYZ Street, Chennai, Tamil Nadu, India.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div class="faq-question">How can I book a service appointment?</div>
+      <div class="faq-answer">You can call our service number or use the online booking form on our website.</div>
+    </div>
+
+    <div class="faq-item" onclick="toggleAnswer(this)">
+      <div class="faq-question">Do you provide doorstep service?</div>
+      <div class="faq-answer">Yes, we offer doorstep pickup and delivery for certain services.</div>
+    </div>
+  </div>
+
+  <h2>Have a Question? Ask Us Below</h2>
+
+  <div class="ask-form">
+    <form action="sendmail.php" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="question" rows="5" placeholder="Type your question here..." required></textarea>
+      <input type="submit" value="Send Question">
+    </form>
+  </div>
+
+  <script>
+    function toggleAnswer(element) {
+      const answer = element.querySelector(".faq-answer");
+      const isVisible = answer.style.display === "block";
+      answer.style.display = isVisible ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
+

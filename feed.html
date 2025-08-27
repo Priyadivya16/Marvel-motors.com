@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marvel Motors - Feedback</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1, h2 {
+      color: #f44336;
+    }
+
+    .feedback-form {
+      background-color:rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin: 20px auto;
+      width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #fff;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: none;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      background-color: #1a237e;
+      color: black;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0d133d;
+    }
+
+    #next-comment {
+      margin-top: 15px;
+      color: #00e676;
+      font-style: italic;
+      display: none;
+    }
+
+    .reviews {
+      max-width: 600px;
+      margin: 30px auto;
+      text-align: left;
+    }
+
+    .review {
+      background-color: rgba(17, 13, 13, 0.1);
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .review h3 {
+      margin: 0;
+      color: #90caf9;
+    }
+
+    .review p {
+      margin-top: 5px;
+      color: #080808;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Customer Feedback</h1>
+
+  <div class="feedback-form">
+    <form id="feedbackForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your feedback here..." required></textarea>
+      <input type="submit" value="Submit Feedback">
+    </form>
+    <div id="next-comment">You can give the next comment now...</div>
+  </div>
+
+  <h2>What Our Customers Say</h2>
+  <div class="reviews">
+    <div class="review">
+      <h3>Ravi Kumar</h3>
+      <p>Excellent service and polite staff. Highly recommended!</p>
+    </div>
+    <div class="review">
+      <h3>Sneha R</h3>
+      <p>The doorstep pickup was super convenient. Loved the service.</p>
+    </div>
+    <div class="review">
+      <h3>Arun V</h3>
+      <p>Marvel Motors diagnosed my car issue quickly and fixed it in no time.</p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("feedbackForm");
+    const nextCommentMsg = document.getElementById("next-comment");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      fetch("sendfeedback.php", {
+        method: "POST",
+        body: formData
+      })
+      .then(response => response.text())
+      .then(data => {
+        alert("✅ Successfully Submitted");  // ✅ Alert box
+        form.reset();                      // ✅ Clear the form
+        nextCommentMsg.style.display = "block"; // ✅ Show message below
+      })
+      .catch(error => {
+        alert("❌ Error sending feedback. Try again.");
+        console.error("Error:", error);
+      });
+    });
+  </script>
+
+</body>
+</html>

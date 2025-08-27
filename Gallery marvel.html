@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marvel Motors - Gallery</title>
+<center>
+        <table border="0" width="20%" height="40">
+            <tr>
+                <td align="center">
+                    <font size="4" face="Arial" color="white">
+               <a href="C:\Users\priya\OneDrive\Documents\divya\homem.html">Home</a>
+              <a href="C:\Users\priya\OneDrive\Documents\divya\service2.html">Service</a> 
+               <a href="C:\Users\priya\OneDrive\Documents\divya\marvel motors service image\About2.html">About Us</a>
+                <a href="C:\Users\priya\OneDrive\Documents\divya\marvel motors service image\Gallery marvel.html">Gallery</a>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </center>
+
+
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a237e;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Lightbox overlay */
+    .lightbox {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border: 4px solid #fff;
+      border-radius: 10px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 32px;
+      color: #fff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Marvel Motors - Service Gallery</h1>
+
+  <div class="gallery">
+    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car painting.jpg.png" alt="Car Painting" onclick="openLightbox(this.src)">
+    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car1.jpg.png" alt="Car Waxing" onclick="openLightbox(this.src)">
+    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car2.jpg.png" alt="General Service" onclick="openLightbox(this.src)">
+    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car3.jpg.png" alt="Car Service" onclick="openLightbox(this.src)">
+    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car4.jpg.png" alt="Battery, oil" onclick="openLightbox(this.src)"gallery/car4.jpg" alt=" Services" onclick="openLightbox(this.src)">
+    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\general.jpg.png" alt=" Services" onclick="openLightbox(this.src)">
+
+    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\carm1.jpg.png" onclick="openLightbox(this.src)">
+    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\carm2.jpg.png" height="400" alt="Services" onclick="openLightbox(this.src)">
+<img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car9.jpg.png" alt="Service" onclick="openLightbox(this.src)">
+<img src="C:\Users\priya\OneDrive\Pictures\Screenshots\carm.jpg.png" alt="car marvelService" onclick="openLightbox(this.src)">
+<img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car6.png" alt="Service" onclick="openlightbox(this src)">
+<img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car8.jpg.png"alt="Car Painting" onclick="openLightbox(this.src)">
+    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car7.jpg.png" alt="Car Waxing" onclick="openLightbox(this.src)">
+
+
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <a href="C:\Users\priya\OneDrive\Documents\divya\marvel motors service image\Gallery marvel.html"class="close-btn">X</a>
+    <img src="" alt="Preview" id="lightbox-img">
+  </div>
+
+  <script>
+    function openLightbox(src) {
+      document.getElementById("lightbox").style.display = "flex";
+      document.getElementById("lightbox-img").src = src;
+    }
+
+        window.addEventListener("click", function (e) {
+      const lightbox = document.getElementById("lightbox");
+      if (e.target === lightbox) {
+        lightbox.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>
