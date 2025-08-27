@@ -4,23 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Marvel Motors - Gallery</title>
-<center>
-        <table border="0" width="20%" height="40">
-            <tr>
-                <td align="center">
-                    <font size="4" face="Arial" color="white">
-               <a href="C:\Users\priya\OneDrive\Documents\divya\homem.html">Home</a>
-              <a href="C:\Users\priya\OneDrive\Documents\divya\service2.html">Service</a> 
-               <a href="C:\Users\priya\OneDrive\Documents\divya\marvel motors service image\About2.html">About Us</a>
-                <a href="C:\Users\priya\OneDrive\Documents\divya\marvel motors service image\Gallery marvel.html">Gallery</a>
-                    </font>
-                </td>
-            </tr>
-        </table>
-    </center>
-
-
-
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -33,6 +16,23 @@
       text-align: center;
       color: #1a237e;
       padding: 20px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #333;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
     }
 
     .gallery {
@@ -57,7 +57,6 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
-    /* Lightbox overlay */
     .lightbox {
       position: fixed;
       top: 0; left: 0;
@@ -76,10 +75,6 @@
       border-radius: 10px;
     }
 
-    .lightbox:target {
-      display: flex;
-    }
-
     .close-btn {
       position: absolute;
       top: 20px;
@@ -92,29 +87,35 @@
 </head>
 <body>
 
+  <!-- Navigation -->
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="service2.html">Service</a>
+    <a href="About2.html">About Us</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+
   <h1>Marvel Motors - Service Gallery</h1>
 
   <div class="gallery">
-    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car painting.jpg.png" alt="Car Painting" onclick="openLightbox(this.src)">
-    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car1.jpg.png" alt="Car Waxing" onclick="openLightbox(this.src)">
-    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car2.jpg.png" alt="General Service" onclick="openLightbox(this.src)">
-    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car3.jpg.png" alt="Car Service" onclick="openLightbox(this.src)">
-    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car4.jpg.png" alt="Battery, oil" onclick="openLightbox(this.src)"gallery/car4.jpg" alt=" Services" onclick="openLightbox(this.src)">
-    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\general.jpg.png" alt=" Services" onclick="openLightbox(this.src)">
-
-    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\carm1.jpg.png" onclick="openLightbox(this.src)">
-    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\carm2.jpg.png" height="400" alt="Services" onclick="openLightbox(this.src)">
-<img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car9.jpg.png" alt="Service" onclick="openLightbox(this.src)">
-<img src="C:\Users\priya\OneDrive\Pictures\Screenshots\carm.jpg.png" alt="car marvelService" onclick="openLightbox(this.src)">
-<img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car6.png" alt="Service" onclick="openlightbox(this src)">
-<img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car8.jpg.png"alt="Car Painting" onclick="openLightbox(this.src)">
-    <img src="C:\Users\priya\OneDrive\Pictures\Screenshots\car7.jpg.png" alt="Car Waxing" onclick="openLightbox(this.src)">
-
-
+    <!-- Use relative paths if images are in a folder called 'images' -->
+    <img src="images/car-painting.jpg" alt="Car Painting" onclick="openLightbox(this.src)">
+    <img src="images/car1.jpg" alt="Car Waxing" onclick="openLightbox(this.src)">
+    <img src="images/car2.jpg" alt="General Service" onclick="openLightbox(this.src)">
+    <img src="images/car3.jpg" alt="Car Service" onclick="openLightbox(this.src)">
+    <img src="images/car4.jpg" alt="Battery, Oil Service" onclick="openLightbox(this.src)">
+    <img src="images/general.jpg" alt="General Services" onclick="openLightbox(this.src)">
+    <img src="images/carm1.jpg" alt="Car Marvel 1" onclick="openLightbox(this.src)">
+    <img src="images/carm2.jpg" alt="Car Marvel 2" onclick="openLightbox(this.src)">
+    <img src="images/car9.jpg" alt="Service" onclick="openLightbox(this.src)">
+    <img src="images/carm.jpg" alt="Car Marvel Service" onclick="openLightbox(this.src)">
+    <img src="images/car6.jpg" alt="Service" onclick="openLightbox(this.src)">
+    <img src="images/car8.jpg" alt="Car Painting" onclick="openLightbox(this.src)">
+    <img src="images/car7.jpg" alt="Car Waxing" onclick="openLightbox(this.src)">
   </div>
 
   <div class="lightbox" id="lightbox">
-    <a href="C:\Users\priya\OneDrive\Documents\divya\marvel motors service image\Gallery marvel.html"class="close-btn">X</a>
+    <a href="#" class="close-btn" onclick="closeLightbox()">X</a>
     <img src="" alt="Preview" id="lightbox-img">
   </div>
 
@@ -124,10 +125,14 @@
       document.getElementById("lightbox-img").src = src;
     }
 
-        window.addEventListener("click", function (e) {
+    function closeLightbox() {
+      document.getElementById("lightbox").style.display = "none";
+    }
+
+    window.addEventListener("click", function (e) {
       const lightbox = document.getElementById("lightbox");
       if (e.target === lightbox) {
-        lightbox.style.display = "none";
+        closeLightbox();
       }
     });
   </script>
