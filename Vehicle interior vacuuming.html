@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicle Interior Vacuuming - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #795548;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #6d4c41;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #efebe9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      color: #333;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Interior Vacuuming</h2>
+
+    <!-- ✅ Local image -->
+    <img src="Vehicle interior vacuuming.jpg" alt="Vehicle Interior Vacuuming">
+
+    <!-- ✅ Service description -->
+    <p>
+      Marvel Motors’ Vehicle Interior Vacuuming service removes dust, dirt, and debris from carpets, seats, floor mats, and hidden corners of your car. Our deep-clean vacuuming ensures a healthier and fresher environment for every ride. We focus on tight spaces and hard-to-reach areas using high-powered tools, restoring your vehicle’s interior to like-new condition. Whether you're preparing for a special trip or just want a clean, comfortable cabin, our expert team delivers spotless results that go beyond surface level. Clean car, clear mind — leave the dirt to us.
+    </p>
+
+    <!-- ✅ Toggle button -->
+    <button class="button" onclick="toggleVacuumInfo()">What’s Included</button>
+
+    <!-- ✅ Toggle content -->
+    <div class="toggle-info" id="vacuumInfo">
+      <ul>
+        <li>🧼 Full carpet and floor mat vacuum</li>
+        <li>🪑 Seat crevice and cushion cleaning</li>
+        <li>🚪 Door panels and trunk area dusting</li>
+        <li>🔍 Tight corners and air vents suction</li>
+        <li>🌿 Fresh-smelling clean interior</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleVacuumInfo() {
+      const info = document.getElementById("vacuumInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

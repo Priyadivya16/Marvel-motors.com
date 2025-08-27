@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicle Body and Trim Repair | Marvel Motors</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #eef1f5;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .card {
+      max-width: 900px;
+      background-color: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+      transition: 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .content {
+      padding: 30px;
+    }
+
+    .content h2 {
+      text-align: center;
+      color: #263238;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 16px;
+      color: #444;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .toggle-btn {
+      display: block;
+      width: fit-content;
+      margin: 25px auto 0;
+      padding: 10px 20px;
+      background-color: #263238;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background-color: #1c262b;
+    }
+
+    .extra-info {
+      margin-top: 20px;
+      background-color: #f1f3f5;
+      padding: 20px;
+      border-radius: 10px;
+      display: none;
+    }
+
+    .extra-info ul {
+      padding-left: 20px;
+    }
+
+    .extra-info li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="card">
+      <!-- Image -->
+      <img src="Vehicle body and trim repair.jpg" alt="Vehicle Body and Trim Repair">
+
+      <div class="content">
+        <!-- Title -->
+        <h2>Vehicle Body and Trim Repair</h2>
+
+        <!-- Unique Description -->
+        <p>
+          Marvel Motors offers specialized Vehicle Body and Trim Repair to bring your car’s elegance back to life. From hail dents to door dings and damaged moldings, we skillfully restore each component to factory condition. Our team uses modern tools and quality materials to repair panels, re-align trims, and remove scratches without compromising original design. Whether it's minor cosmetic damage or after an accident, we make sure your vehicle looks sharp and drives safer. Trust our expert finish and seamless results — because your car deserves more than just a patch-up; it deserves perfection.
+        </p>
+
+        <!-- Toggle Button -->
+        <button class="toggle-btn" onclick="toggleRepairInfo()">Why Body & Trim Repair Matters</button>
+
+        <!-- Toggle Section -->
+        <div class="extra-info" id="repairDetails">
+          <ul>
+            <li>🚗 Increases resale value</li>
+            <li>🔧 Prevents rust from scratches/dents</li>
+            <li>🎨 Maintains aesthetic appearance</li>
+            <li>🛡️ Protects structural integrity</li>
+            <li>✔️ Ensures proper panel alignment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleRepairInfo() {
+      const info = document.getElementById("repairDetails");
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

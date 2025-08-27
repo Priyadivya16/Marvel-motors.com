@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Maintenance - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e88e5;
+      font-size: 28px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #1e88e5;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #e3f2fd;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Maintenance</h2>
+
+    <!-- ✅ Image from local path -->
+    <img src="Vehicle maintenance.jpg" alt="Vehicle Maintenance">
+
+    <!-- ✅ Description -->
+    <p>
+      Keep your car in top running condition with Marvel Motors’ expert vehicle maintenance service. We provide regular oil changes, brake checks, fluid inspections, and more to ensure every part of your vehicle performs reliably. Prevent breakdowns, improve fuel economy, and drive safer with our routine checks. Our trained technicians use high-quality materials and diagnostic tools for complete peace of mind. Whether it’s a short trip or a long journey ahead, make sure your car is ready. Marvel Motors – where maintenance meets excellence.
+    </p>
+
+    <!-- ✅ Toggle Button -->
+    <button class="button" onclick="toggleInfo()">What’s Included</button>
+
+    <!-- ✅ Toggle Details -->
+    <div class="toggle-info" id="maintenanceList">
+      <ul>
+        <li>🛢️ Engine oil & filter replacement</li>
+        <li>🔧 Brake & suspension inspection</li>
+        <li>🚗 Tire pressure & wheel alignment</li>
+        <li>⚙️ Battery, lights, and wiper check</li>
+        <li>📋 Full multi-point inspection report</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleInfo() {
+      const details = document.getElementById("maintenanceList");
+      details.style.display = (details.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

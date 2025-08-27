@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vehicle A/C Recharge - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: #0277bd;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333333;
+      text-align: justify;
+    }
+
+    .toggle-button {
+      background-color: #0277bd;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .toggle-info {
+      display: none;
+      margin-top: 15px;
+      font-size: 15px;
+      color: #555555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>Vehicle A/C Recharge</h2>
+    <img src="Vehicle AC recharge.jpg" alt="Vehicle A/C Recharge">
+    
+    <p>
+      At Marvel Motors, our Vehicle A/C Recharge service ensures your air conditioning system blows cool, clean air — even on the hottest days. If your A/C is blowing warm air, making noise, or taking too long to cool, it might be time for a recharge. We evacuate old refrigerant, inspect for leaks, and refill your system with the correct gas to manufacturer specifications. Our certified technicians use precision tools for fast, efficient service, restoring comfort in your car's cabin. Don’t sweat it — breathe easy again with Marvel Motors’ reliable and eco-friendly A/C recharge.
+    </p>
+
+    <button class="toggle-button" onclick="toggleACInfo()">Benefits of A/C Recharge</button>
+
+    <div class="toggle-info" id="acInfo">
+      <ul>
+        <li>❄️ Restores maximum cooling performance</li>
+        <li>✅ Prevents compressor damage and leaks</li>
+        <li>🌬️ Eliminates musty or stale cabin air</li>
+        <li>🚗 Improves overall comfort during long drives</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleACInfo() {
+      const info = document.getElementById("acInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

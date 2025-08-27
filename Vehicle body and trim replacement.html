@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Body & Trim Replacement | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #37474f;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #37474f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #263238;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #eceff1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Body & Trim Replacement</h2>
+
+    <!-- Image -->
+    <img src="Vehicle body and trim replacement.jpg" alt="Vehicle Body and Trim Replacement">
+
+    <!-- Description -->
+    <p>
+      At Marvel Motors, we offer precise Vehicle Body and Trim Replacement services to restore your car’s original look and feel. Whether it's dents from collisions, faded bumpers, cracked panels, or broken trims, our skilled technicians ensure each part is replaced with factory-matched components. We focus on fit, finish, and durability to enhance your vehicle's aesthetic and safety. Whether you're refreshing your car’s appearance or recovering from damage, we’ve got you covered. Trust Marvel Motors for attention to detail and high-quality workmanship that brings your vehicle back to showroom condition.
+    </p>
+
+    <!-- Toggle Button -->
+    <button class="button" onclick="toggleInfo()">Common Replacement Needs</button>
+
+    <!-- Toggle Content -->
+    <div class="toggle-info" id="trimInfo">
+      <ul>
+        <li>🚗 Cracked or broken bumper covers</li>
+        <li>🛠️ Dented fenders or side panels</li>
+        <li>🔧 Loose or missing trim pieces</li>
+        <li>🎨 Faded or scratched body paint</li>
+        <li>🚙 Damaged door or trunk moldings</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleInfo() {
+      const info = document.getElementById("trimInfo");
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

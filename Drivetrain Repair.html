@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drivetrain Repair - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      background-color: #2e7d32;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #1b5e20;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Drivetrain Repair</h2>
+
+    <img src="Drivetrain repair.jpg" alt="Drivetrain Repair Service">
+
+    <p>
+      The drivetrain is what delivers engine power to your wheels — and when it fails, so does your journey. At Marvel Motors, we specialize in complete drivetrain diagnosis and repair. Whether it's the driveshaft, axles, differential, or transfer case, our trained experts detect and resolve the issue with precision. Strange vibrations? Clunking noises? Difficulty turning or accelerating? These could be drivetrain problems. We use quality parts and cutting-edge tools to restore performance and safety. Don’t let drivetrain issues hold your vehicle back — let Marvel Motors get you back on the road, smooth and strong.
+    </p>
+
+    <button class="button" onclick="toggleDrivetrain()">Symptoms of Drivetrain Issues</button>
+
+    <div class="toggle-info" id="drivetrainInfo">
+      <ul>
+        <li>🔧 Clunking or rattling sounds while driving</li>
+        <li>🚗 Vibration at high speeds</li>
+        <li>⚠️ Difficulty shifting gears or poor acceleration</li>
+        <li>🛞 Uneven tire wear or alignment issues</li>
+        <li>⚙️ Fluid leaks near the rear/front axle</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleDrivetrain() {
+      const info = document.getElementById("drivetrainInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

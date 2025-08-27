@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicle Modifications - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #bf360c;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      background-color: #bf360c;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #870000;
+    }
+
+    .toggle-info {
+      display: none;
+      margin-top: 15px;
+      font-size: 15px;
+      color: #444;
+      background-color: #fff3e0;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Modifications</h2>
+
+    <img src="Vehicle modifications.jpg" alt="Vehicle Modifications">
+
+    <p>
+      Want to make your car stand out? Marvel Motors offers custom vehicle modification services to turn your dream ride into a reality. From sporty body kits and alloy wheel upgrades to suspension lowering and performance tuning, we help you personalize your vehicle to reflect your style. Our experienced team ensures safety, legal compliance, and flawless finish in every modification. Whether you're looking to boost aesthetics, comfort, or power — we’ve got the right tech, tools, and talent. Let Marvel Motors take your vehicle to the next level with confidence and creativity.
+    </p>
+
+    <button class="button" onclick="toggleModifications()">Popular Modifications</button>
+
+    <div class="toggle-info" id="modInfo">
+      <ul>
+        <li>🚗 Alloy wheels & low-profile tires</li>
+        <li>🎨 Custom paint or vinyl wraps</li>
+        <li>🔊 Sound system upgrades</li>
+        <li>💡 LED lighting and underglow kits</li>
+        <li>⚙️ Engine remapping & exhaust tuning</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleModifications() {
+      const info = document.getElementById("modInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

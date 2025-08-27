@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Engine Repair - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #b71c1c;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      background-color: #b71c1c;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #7f0000;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #ffebee;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Engine Repair</h2>
+
+    <img src="Engine repair.jpg" alt="Engine Repair">
+
+    <p>
+      Marvel Motors specializes in expert engine repair services that restore performance, fuel efficiency, and reliability to your vehicle. Whether it's overheating, oil leaks, strange noises, or loss of power, our skilled mechanics quickly diagnose and resolve engine issues using the latest tools and diagnostics. From cylinder misfires to full overhauls, we handle both petrol and diesel engines with precision. Your engine is the heart of your car — and we treat it with the care it deserves. Trust Marvel Motors for transparent service, genuine parts, and long-term peace of mind on every drive.
+    </p>
+
+    <button class="button" onclick="toggleEngineIssues()">Common Engine Problems</button>
+
+    <div class="toggle-info" id="engineInfo">
+      <ul>
+        <li>🔧 Overheating and coolant leaks</li>
+        <li>⚠️ Knocking or ticking noises</li>
+        <li>💨 Excessive smoke or oil consumption</li>
+        <li>🚫 Hard starting or stalling</li>
+        <li>🔋 Check Engine light on</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleEngineIssues() {
+      const info = document.getElementById("engineInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

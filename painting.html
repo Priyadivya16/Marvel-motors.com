@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Painting | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #b71c1c;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 25px auto;
+      padding: 12px 24px;
+      background-color: #b71c1c;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #7f0000;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #fce4ec;
+      padding: 16px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Painting</h2>
+
+    <!-- Image -->
+    <img src="Painting.jpg" alt="Vehicle Painting Service">
+
+    <!-- Unique Description -->
+    <p>
+      Marvel Motors offers premium vehicle painting services to restore or refresh your car’s look with factory-level precision. Whether it’s minor scratch touch-ups, full body repainting, or custom color application, we use top-quality paint and cutting-edge spray technology. Our expert technicians ensure a smooth finish, color accuracy, and durable coating that resists weather and fading. Painting is not just about beauty — it protects your car from rust, UV damage, and wear. Trust Marvel Motors to bring out the best in your vehicle’s appearance while maintaining the highest standard of workmanship and care.
+    </p>
+
+    <!-- Toggle Button -->
+    <button class="button" onclick="togglePaintInfo()">Why Choose Professional Painting?</button>
+
+    <!-- Toggle Info Section -->
+    <div class="toggle-info" id="paintInfo">
+      <ul>
+        <li>🎨 Exact color match and glossy finish</li>
+        <li>🛡️ Protects from rust and corrosion</li>
+        <li>🌦️ Weather and UV-resistant coating</li>
+        <li>🚗 Increases resale and aesthetic value</li>
+        <li>✅ Scratch, dent, and fade coverage</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function togglePaintInfo() {
+      const info = document.getElementById("paintInfo");
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

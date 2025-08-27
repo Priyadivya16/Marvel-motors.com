@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicle Exhaust System Replacement | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #b71c1c;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #b71c1c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #880e4f;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #ffebee;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Exhaust System Replacement</h2>
+
+    <!-- 🖼️ Image Display -->
+    <img src="Vehicle exhaust system replacement.jpg" alt="Exhaust System Replacement">
+
+    <!-- 📝 Description -->
+    <p>
+      Marvel Motors provides top-tier Vehicle Exhaust System Replacement to ensure your car stays quiet, efficient, and environmentally friendly. Rust, corrosion, and cracks in the exhaust system can lead to poor performance and emissions. Our expert technicians carefully remove the damaged parts and replace them with high-quality, long-lasting components. Whether it’s your muffler, catalytic converter, or exhaust pipe, we guarantee a perfect fit and smooth operation. Enjoy better fuel economy, lower emissions, and a safer ride when you trust Marvel Motors to restore your exhaust system to peak condition.
+    </p>
+
+    <!-- 🔘 Toggle Button -->
+    <button class="button" onclick="toggleDetails()">Why Replace the Exhaust?</button>
+
+    <!-- 📋 Toggle Content -->
+    <div class="toggle-info" id="exhaustDetails">
+      <ul>
+        <li>🔊 Loud or rattling exhaust noise</li>
+        <li>💨 Unusual or excess smoke</li>
+        <li>⚠️ Failed emissions test</li>
+        <li>🔧 Rusted or broken pipes</li>
+        <li>📉 Reduced fuel efficiency</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleDetails() {
+      const details = document.getElementById("exhaustDetails");
+      details.style.display = details.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

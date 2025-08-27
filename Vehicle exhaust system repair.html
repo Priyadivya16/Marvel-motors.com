@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Exhaust System Repair | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #b71c1c;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #b71c1c;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #880e4f;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #ffebee;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Exhaust System Repair</h2>
+
+    <!-- Image Display -->
+    <img src="Vehicle exhaust system repair.jpg" alt="Vehicle Exhaust System Repair">
+
+    <!-- Paragraph -->
+    <p>
+      Marvel Motors specializes in Vehicle Exhaust System Repair to keep your car running clean, quiet, and efficient. A damaged exhaust system can lead to noise, poor mileage, and harmful emissions. Our expert mechanics diagnose issues like rusted pipes, leaking gaskets, or broken mufflers, and provide quick, high-quality repairs using reliable parts. Whether you hear rattling noises or fail an emissions test, we’ll fix the problem before it worsens. Trust Marvel Motors for dependable exhaust repair that restores your car’s performance, protects the environment, and ensures a smoother, quieter ride on every trip.
+    </p>
+
+    <!-- Toggle Button -->
+    <button class="button" onclick="toggleInfo()">Common Repair Signs</button>
+
+    <!-- Hidden List -->
+    <div class="toggle-info" id="infoBox">
+      <ul>
+        <li>🔊 Unusual engine or exhaust noise</li>
+        <li>💨 Increased smoke from tailpipe</li>
+        <li>🛠️ Rust or visible damage under vehicle</li>
+        <li>📉 Loss in fuel efficiency</li>
+        <li>⚠️ Check engine light is on</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleInfo() {
+      const infoBox = document.getElementById("infoBox");
+      infoBox.style.display = (infoBox.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

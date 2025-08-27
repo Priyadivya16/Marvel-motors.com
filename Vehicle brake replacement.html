@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicle Brake Replacement | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #d84315;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #d84315;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #bf360c;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #fbe9e7;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Brake Replacement</h2>
+
+    <!-- Image Display -->
+    <img src="Vehicle brake replacement.jpg" alt="Vehicle Brake Replacement">
+
+    <!-- Service Description -->
+    <p>
+      At Marvel Motors, your safety is our top priority. Our Vehicle Brake Replacement service ensures your brakes perform at their best. Worn brake pads, damaged rotors, or low fluid levels can reduce stopping power and increase accident risk. Our trained technicians inspect your brake system thoroughly and replace worn components with premium-quality parts. Whether you're hearing a squeal, feeling vibrations, or taking longer to stop, we’ll restore your confidence on the road. With Marvel Motors, enjoy smoother stops, reduced noise, and safe braking every time you drive. Don't wait until it's too late—stop safe with us.
+    </p>
+
+    <!-- Toggle Button -->
+    <button class="button" onclick="toggleBrakeInfo()">Brake Warning Signs</button>
+
+    <!-- Toggle Info -->
+    <div class="toggle-info" id="brakeInfo">
+      <ul>
+        <li>🔊 Squealing or grinding noises</li>
+        <li>⛔ Soft or spongy brake pedal</li>
+        <li>⚠️ ABS or brake warning light</li>
+        <li>🔄 Vibrations when braking</li>
+        <li>📉 Increased stopping distance</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleBrakeInfo() {
+      const section = document.getElementById("brakeInfo");
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

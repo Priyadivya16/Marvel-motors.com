@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Steering Wheel Repair | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #004d40;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #004d40;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .button:hover {
+      background-color: #002f2c;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Steering Wheel Repair</h2>
+
+    <!-- Image -->
+    <img src="Steering wheel repair.jpg" alt="Steering Wheel Repair">
+
+    <!-- Unique Description -->
+    <p>
+      At Marvel Motors, our Steering Wheel Repair service is designed to ensure your driving experience remains safe, smooth, and responsive. Whether you’re facing stiffness, unusual noises, or misalignment while turning, our technicians diagnose the root cause precisely — from worn-out bushings to electrical faults. We use advanced tools to repair or replace steering components and restore control to factory standards. A faulty steering wheel can compromise road safety, handling, and driver comfort. Get back on the road with confidence by trusting Marvel Motors for high-quality steering wheel repair with unmatched expertise and care.
+    </p>
+
+    <!-- Toggle Button -->
+    <button class="button" onclick="toggleSteeringInfo()">Signs Your Steering Needs Repair</button>
+
+    <!-- Toggle Content -->
+    <div class="toggle-info" id="steeringInfo">
+      <ul>
+        <li>🔊 Grinding or clicking while turning</li>
+        <li>🛞 Loose or stiff steering feel</li>
+        <li>📉 Vehicle drifting or pulling</li>
+        <li>⚠️ Steering warning light on dashboard</li>
+        <li>🧭 Inconsistent wheel return after a turn</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleSteeringInfo() {
+      const info = document.getElementById("steeringInfo");
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

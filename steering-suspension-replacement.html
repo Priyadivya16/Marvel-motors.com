@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Steering and Suspension Replacement | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1a237e;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+    }
+
+    .fancy-button {
+      display: inline-block;
+      margin: 30px auto;
+      padding: 12px 24px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background: linear-gradient(45deg, #1a237e, #3949ab);
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-align: center;
+    }
+
+    .fancy-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(26, 35, 126, 0.4);
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #e8eaf6;
+      padding: 18px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Steering and Suspension Replacement</h2>
+
+    <!-- Image -->
+    <img src="Steering and suspension replacement.jpg" alt="Steering and Suspension Replacement">
+
+    <!-- Description -->
+    <p>
+      At Marvel Motors, we understand how critical steering and suspension are for smooth handling and ride comfort. Our Steering and Suspension Replacement service targets worn-out shocks, struts, control arms, or steering racks that cause poor vehicle stability or bumpy rides. We use top-grade components to restore your car’s alignment, steering response, and shock absorption. Whether you're hearing clunks or struggling with control, our trained experts ensure precision repairs for maximum safety and smoothness. Experience a tighter, safer ride with Marvel Motors’ expert care and quality replacements that feel like new from the wheel to the road.
+    </p>
+
+    <!-- Custom Button -->
+    <div style="text-align: center;">
+      <button class="fancy-button" onclick="toggleSuspensionInfo()">What Are the Signs?</button>
+    </div>
+
+    <!-- Toggle Content -->
+    <div class="toggle-info" id="suspensionInfo">
+      <ul>
+        <li>🚗 Vehicle bounces excessively over bumps</li>
+        <li>🔊 Clunking or knocking sounds when turning</li>
+        <li>🎯 Pulling to one side while driving</li>
+        <li>🛞 Uneven tire wear</li>
+        <li>📉 Loose or stiff steering response</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleSuspensionInfo() {
+      const section = document.getElementById("suspensionInfo");
+      section.style.display = section.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

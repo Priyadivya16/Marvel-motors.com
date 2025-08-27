@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Car Waxing - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfdfd;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00695c;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      background-color: #00695c;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #004d40;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Car Waxing</h2>
+
+    <img src="Car waxing.jpg" alt="Car Waxing Service">
+
+    <p>
+      At Marvel Motors, our car waxing service not only makes your vehicle shine like new but also provides vital protection against environmental damage. Waxing shields your car's paint from harmful UV rays, road salt, bird droppings, and rain. We use premium waxes that enhance color depth and deliver a long-lasting glossy finish. Whether you're preparing your car for a show, resale, or simply want to maintain a flawless look, our expert team ensures precision and care in every coat. Give your car the glow it deserves — choose Marvel Motors for professional-grade car waxing.
+    </p>
+
+    <button class="button" onclick="toggleWax()">Why Waxing Matters</button>
+
+    <div class="toggle-info" id="waxInfo">
+      <ul>
+        <li>🌞 Protects paint from sun damage</li>
+        <li>💧 Repels water and dust buildup</li>
+        <li>🛡 Prevents minor scratches & stains</li>
+        <li>✨ Enhances shine & resale value</li>
+        <li>🔁 Increases longevity of paint job</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleWax() {
+      const info = document.getElementById("waxInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

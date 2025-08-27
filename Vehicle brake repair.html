@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicle Brake Repair | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #c62828;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #c62828;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #b71c1c;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #ffebee;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      color: #444;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Brake Repair</h2>
+
+    <!-- Image -->
+    <img src="Vehicle brake repair.jpg" alt="Vehicle Brake Repair">
+
+    <!-- Paragraph -->
+    <p>
+      Marvel Motors provides professional Vehicle Brake Repair services to keep your driving safe and responsive. Brake issues can lead to delayed stops, squeaking noises, or even complete system failure. Our experienced technicians quickly diagnose worn pads, leaking fluid, or damaged rotors and fix them with quality parts. Whether it’s disc or drum brakes, we ensure smooth and confident braking performance. Regular maintenance extends the life of your braking system and gives you peace of mind on every trip. Trust Marvel Motors to keep your brakes in top shape and stop problems before they become serious.
+    </p>
+
+    <!-- Button -->
+    <button class="button" onclick="toggleRepairInfo()">Brake Trouble Signs</button>
+
+    <!-- Toggle Info -->
+    <div class="toggle-info" id="repairInfo">
+      <ul>
+        <li>🔊 Squeaking or grinding sounds</li>
+        <li>⛔ Vehicle pulls to one side</li>
+        <li>⚠️ Brake warning light</li>
+        <li>🛑 Unusual brake pedal feel</li>
+        <li>📉 Longer stopping distances</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleRepairInfo() {
+      const box = document.getElementById("repairInfo");
+      box.style.display = box.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

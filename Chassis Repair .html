@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chassis Repair - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #4e342e;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      background-color: #4e342e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #260e04;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #efebe9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Chassis Repair</h2>
+
+    <img src="chassis repair car.jpg" alt="Chassis Repair Service">
+
+    <p>
+      The chassis is your vehicle’s backbone — and at Marvel Motors, we ensure it stays strong and straight. Accidents, rust, or wear can cause chassis damage, affecting safety, alignment, and performance. Our skilled technicians use advanced frame straightening machines and welding tools to repair, reinforce, or realign chassis structures precisely. Whether it’s a bent frame, cracked supports, or rusted sections, we bring structural integrity back to your car. We work on all vehicle types with genuine care and precision. With Marvel Motors, you’re guaranteed durable, reliable, and safety-first chassis repair services every time.
+    </p>
+
+    <button class="button" onclick="toggleChassis()">Common Chassis Issues We Fix</button>
+
+    <div class="toggle-info" id="chassisInfo">
+      <ul>
+        <li>🔧 Frame bending or twist damage</li>
+        <li>⚠️ Cracks and rusted areas</li>
+        <li>🛞 Misalignment due to collisions</li>
+        <li>⚙️ Suspension and cross-member damage</li>
+        <li>🛠 Full welding and structural support</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleChassis() {
+      const info = document.getElementById("chassisInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

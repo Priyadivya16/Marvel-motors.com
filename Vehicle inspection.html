@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vehicle Inspection | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #33691e;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #33691e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background-color: #1b5e20;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #e8f5e9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Inspection</h2>
+
+    <!-- 🚗 Vehicle Inspection Image -->
+    <img src="Vehicle inspection.jpg" alt="Vehicle Inspection Image">
+
+    <!-- 📝 Description -->
+    <p>
+      Marvel Motors offers a thorough vehicle inspection service to ensure your car is safe, roadworthy, and running efficiently. Our certified mechanics examine every essential component—from brakes and battery to tires, lights, and engine health. Whether you're preparing for a long trip, buying a used car, or due for a routine check-up, our detailed inspection keeps you one step ahead of costly breakdowns. We provide a full report and expert advice, so you know exactly what your car needs. Trust Marvel Motors for honest, transparent, and professional inspection every time you visit.
+    </p>
+
+    <!-- 🔘 Toggle Button -->
+    <button class="button" onclick="toggleInspection()">What We Inspect</button>
+
+    <!-- ✅ Hidden List -->
+    <div class="toggle-info" id="inspectionList">
+      <ul>
+        <li>🛞 Tires and Wheel Alignment</li>
+        <li>🔋 Battery & Charging System</li>
+        <li>🛠️ Brakes and Suspension</li>
+        <li>💡 Headlights & Indicators</li>
+        <li>🛢️ Oil & Fluid Levels</li>
+        <li>🔍 Engine Diagnostics</li>
+        <li>🚗 Steering and Exhaust</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleInspection() {
+      const list = document.getElementById("inspectionList");
+      list.style.display = list.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exhaust Service - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #455a64;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      background-color: #455a64;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #263238;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #eceff1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Exhaust System Service</h2>
+
+    <img src="Exhaust.jpg" alt="Exhaust System Service">
+
+    <p>
+      Your car’s exhaust system isn’t just about reducing noise — it plays a vital role in fuel efficiency, emission control, and overall engine performance. At Marvel Motors, we inspect and repair exhaust pipes, mufflers, catalytic converters, and manifolds with precision. Whether you notice loud engine noise, vibration, rust, or unusual smells, our team diagnoses the issue quickly and safely. A damaged exhaust can affect your health, fuel mileage, and legal compliance. Drive clean, quiet, and confident with Marvel Motors’ expert exhaust system services — where safety and performance meet under one hood.
+    </p>
+
+    <button class="button" onclick="toggleExhaust()">Signs Your Exhaust Needs Service</button>
+
+    <div class="toggle-info" id="exhaustInfo">
+      <ul>
+        <li>🔊 Louder-than-normal engine noise</li>
+        <li>💨 Decrease in fuel efficiency</li>
+        <li>🌫 Unpleasant fumes or smoke</li>
+        <li>⚠️ Check Engine Light on</li>
+        <li>🛠 Rust or visible holes in the exhaust</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleExhaust() {
+      const info = document.getElementById("exhaustInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

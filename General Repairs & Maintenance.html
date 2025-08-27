@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>General Repairs & Maintenance - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #455a64;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      background-color: #455a64;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #263238;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #eceff1;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>General Repairs & Maintenance</h2>
+
+    <img src="General repairs &amp; maintenance.jpg" alt="General Repairs & Maintenance">
+
+    <p>
+      At Marvel Motors, our General Repairs & Maintenance service is designed to keep your vehicle running safely and efficiently all year long. From minor adjustments to critical component repairs, our certified technicians are equipped to handle it all with precision. Whether it's a brake issue, a fluid leak, or engine misfire, we inspect, diagnose, and resolve problems quickly and professionally. Regular maintenance not only extends your car’s life but also improves fuel economy and prevents future breakdowns. With genuine parts, transparent pricing, and dependable care, Marvel Motors keeps your vehicle in peak condition.
+    </p>
+
+    <button class="button" onclick="toggleMaintenance()">Key Services Covered</button>
+
+    <div class="toggle-info" id="maintenanceInfo">
+      <ul>
+        <li>🔧 Brake, clutch, suspension repair</li>
+        <li>🚘 Cooling system & radiator fixes</li>
+        <li>⚙️ Belt, hose, and bearing checks</li>
+        <li>🔋 Battery, lights, fuse issues</li>
+        <li>🛠️ Scheduled and emergency services</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleMaintenance() {
+      const info = document.getElementById("maintenanceInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

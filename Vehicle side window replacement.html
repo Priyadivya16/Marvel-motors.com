@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vehicle Side Window Replacement - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: #1565c0;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333333;
+      text-align: justify;
+    }
+
+    .toggle-button {
+      background-color: #1565c0;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .toggle-info {
+      display: none;
+      margin-top: 15px;
+      font-size: 15px;
+      color: #555555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>Vehicle Side Window Replacement</h2>
+    <img src="Vehicle side window replacement.jpg" alt="Vehicle Side Window Replacement">
+
+    <p>
+      At Marvel Motors, our Vehicle Side Window Replacement service provides fast, professional glass replacement for cracked, shattered, or malfunctioning side windows. Whether the damage is due to accidents, break-ins, or wear and tear, our expert technicians use high-quality glass matched to your vehicle’s specifications. We ensure perfect sealing, smooth window operation, and complete water resistance. A clear and intact window not only restores visibility and appearance but also protects you from weather and enhances security. Drive in comfort and safety—trust Marvel Motors for window replacement done right, with precision, care, and lasting results.
+    </p>
+
+    <button class="toggle-button" onclick="toggleWindowInfo()">Why Side Window Replacement Matters</button>
+
+    <div class="toggle-info" id="windowInfo">
+      <ul>
+        <li>🔒 Improves vehicle security and deters theft</li>
+        <li>🌧️ Keeps interior dry and protected from the elements</li>
+        <li>🔇 Reduces wind noise for a quieter cabin</li>
+        <li>🚘 Restores full window functionality and visibility</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleWindowInfo() {
+      const info = document.getElementById("windowInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

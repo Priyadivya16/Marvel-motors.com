@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Power Window Repair - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #00796b;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      background-color: #00796b;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #004d40;
+    }
+
+    .toggle-info {
+      display: none;
+      margin-top: 15px;
+      font-size: 15px;
+      color: #444;
+      line-height: 1.6;
+      background-color: #e0f2f1;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Power Window Repair</h2>
+
+    <img src="Vehicle power window repair.jpg" alt="Vehicle Power Window Repair">
+
+    <p>
+      Is your power window stuck, moving slowly, or refusing to work at all? At Marvel Motors, we specialize in professional power window repair for all car models. Whether it's a worn-out regulator, faulty motor, or jammed tracks, our expert technicians diagnose and fix the issue quickly. We use reliable, high-quality parts to ensure smooth and safe window operation. From noisy windows to broken switches, we’ve got you covered. Don't let a small problem cause major inconvenience — get it fixed the right way, the Marvel way.
+    </p>
+
+    <button class="button" onclick="toggleWindowInfo()">Common Issues We Fix</button>
+
+    <div class="toggle-info" id="windowInfo">
+      <ul>
+        <li>⚠️ Window not moving up or down</li>
+        <li>🔌 Faulty switch or motor</li>
+        <li>🪟 Misaligned or jammed tracks</li>
+        <li>🔊 Grinding or clicking noises</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleWindowInfo() {
+      const info = document.getElementById("windowInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

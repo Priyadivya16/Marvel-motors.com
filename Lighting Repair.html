@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Lighting Repair | Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #37474f;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 25px auto;
+      padding: 10px 22px;
+      background-color: #37474f;
+      color: white;
+      border: none;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #263238;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #eceff1;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Lighting Repair</h2>
+
+    <!-- Image -->
+    <img src="Lighting repair.jpg" alt="Lighting Repair">
+
+    <!-- Description -->
+    <p>
+      At Marvel Motors, our Lighting Repair service ensures your vehicle’s headlights, brake lights, indicators, and interior lights work flawlessly and comply with safety standards. Whether you're facing dimming lights, flickering bulbs, or complete outages, our experts diagnose the electrical and hardware components precisely. We replace faulty bulbs, repair wiring, and calibrate systems using advanced tools. Clear, consistent lighting isn’t just for visibility — it’s critical for road safety and communication with other drivers. Let Marvel Motors brighten your journey with professional lighting solutions that keep you safe, seen, and stylish on every road.
+    </p>
+
+    <!-- Toggle Button -->
+    <button class="button" onclick="toggleLightingInfo()">Common Lighting Issues</button>
+
+    <!-- Toggle Section -->
+    <div class="toggle-info" id="lightingInfo">
+      <ul>
+        <li>💡 Flickering or dim headlights</li>
+        <li>🔌 Loose wiring or connectors</li>
+        <li>🚫 Non-functional brake or turn signals</li>
+        <li>⚠️ Dashboard warning lights</li>
+        <li>🧭 Foggy or broken light covers</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleLightingInfo() {
+      const info = document.getElementById("lightingInfo");
+      info.style.display = info.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

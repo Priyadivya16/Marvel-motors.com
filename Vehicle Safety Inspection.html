@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vehicle Safety Inspection - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #d32f2f;
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #d32f2f;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .toggle-info {
+      display: none;
+      margin-top: 15px;
+      font-size: 15px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Vehicle Safety Inspection</h2>
+
+    <!-- Image from local directory -->
+    <img src="Vehicle safety 1.jpg" alt="Vehicle Safety Inspection">    <!-- Description -->
+    <p>
+      At Marvel Motors, our comprehensive Vehicle Safety Inspection service ensures that your car meets all essential safety standards. From brake performance, tire tread, and suspension integrity to lights, horn, mirrors, and wipers — our skilled technicians inspect every critical aspect. Whether you're preparing for a long trip or just want peace of mind, this service provides a full diagnostic of your car's safety readiness. Drive with confidence knowing that every component has been checked with precision and care. At Marvel Motors, your safety is our priority.
+    </p>
+
+    <!-- Toggle Button -->
+    <button class="button" onclick="toggleSafetyTips()">Why It’s Important</button>
+
+    <!-- Hidden Info -->
+    <div class="toggle-info" id="safetyTips">
+      <ul>
+        <li>✅ Prevents accidents by detecting worn-out parts early</li>
+        <li>✅ Keeps your vehicle legally roadworthy</li>
+        <li>✅ Boosts resale value with documented inspections</li>
+        <li>✅ Increases your family’s safety on the road</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- JavaScript for Toggle -->
+  <script>
+    function toggleSafetyTips() {
+      const tips = document.getElementById("safetyTips");
+      tips.style.display = (tips.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

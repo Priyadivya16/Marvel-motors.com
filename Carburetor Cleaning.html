@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carburetor Cleaning - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #5d4037;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.7;
+      text-align: justify;
+    }
+
+    .button {
+      display: block;
+      margin: 20px auto;
+      background-color: #5d4037;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #3e2723;
+    }
+
+    .toggle-info {
+      display: none;
+      background-color: #efebe9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Carburetor Cleaning</h2>
+
+    <img src="carburetor cleaning.jpg" alt="Carburetor Cleaning Service">
+
+    <p>
+      A clean carburetor is essential for your engine’s performance and fuel efficiency. At Marvel Motors, our carburetor cleaning service ensures your vehicle runs smoothly by removing built-up carbon, dirt, and varnish. Our expert technicians carefully dismantle, clean, and tune your carburetor using advanced tools and quality-safe solutions. Whether your engine is struggling to start, idling roughly, or guzzling fuel, a clean carburetor can make all the difference. We restore power, throttle response, and overall engine health. Trust Marvel Motors to keep your carburetor spotless and your ride smooth — because your engine deserves to breathe easy.
+    </p>
+
+    <button class="button" onclick="toggleCarb()">Why Regular Cleaning Matters</button>
+
+    <div class="toggle-info" id="carbInfo">
+      <ul>
+        <li>🛠️ Improves fuel efficiency</li>
+        <li>⚙️ Prevents engine misfiring</li>
+        <li>🚗 Enhances acceleration and power</li>
+        <li>⛽ Reduces fuel waste and smoke</li>
+        <li>🧼 Prolongs engine life and performance</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleCarb() {
+      const info = document.getElementById("carbInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>

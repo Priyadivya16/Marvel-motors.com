@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Upholstery & Interior Restoration - Marvel Motors</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section {
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      color: #6a1b9a;
+      font-size: 28px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .section img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333333;
+      text-align: justify;
+    }
+
+    .toggle-button {
+      background-color: #6a1b9a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .toggle-info {
+      display: none;
+      margin-top: 15px;
+      font-size: 15px;
+      color: #555555;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>Upholstery & Interior Restoration</h2>
+    <img src="Upholstery & interior restoration.jpg" alt="Upholstery & Interior Restoration">
+    
+    <p>
+      At Marvel Motors, we breathe new life into your car’s interior through expert upholstery and interior restoration, where every cracked leather seat, sagging headliner, faded dashboard, or torn fabric is skillfully restored or reupholstered using premium materials and craftsmanship, bringing comfort, elegance, and freshness back to your ride, while enhancing not just aesthetics but also resale value, with our technicians carefully matching your vehicle’s original trim or transforming it with custom designs, so whether you're reviving a vintage beauty or modernizing a daily driver, we turn worn-out interiors into a refined, luxurious space that feels brand new every time you drive.
+    </p>
+
+    <button class="toggle-button" onclick="toggleInfo()">View Before & After Benefits</button>
+    
+    <div class="toggle-info" id="extraInfo">
+      <ul>
+        <li>✅ Before: Cracked leather, torn seats, faded fabric</li>
+        <li>✅ After: Fresh upholstery, restored trims, luxurious cabin feel</li>
+        <li>✅ Increases resale value and comfort</li>
+        <li>✅ Personalized material and color options available</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function toggleInfo() {
+      const info = document.getElementById("extraInfo");
+      info.style.display = (info.style.display === "block") ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
