@@ -4,11 +4,7 @@
   <meta charset="UTF-8">
   <title>Marvel Motors</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: Arial, sans-serif;
@@ -25,9 +21,7 @@
       transition: transform 0.3s ease;
     }
 
-    .sidebar h2 {
-      margin-bottom: 10px;
-    }
+    .sidebar h2 { margin-bottom: 10px; }
 
     .sidebar a {
       display: block;
@@ -36,19 +30,17 @@
       text-decoration: none;
       border-bottom: 1px solid #333;
     }
-
-    .sidebar a:hover {
-      background-color: #333;
-    }
+    .sidebar a:hover { background-color: #333; }
 
     .main-content {
       flex: 1;
-      padding: 20px;
+      margin-left: 150px; /* keeps space for sidebar */
+      padding: 0;
     }
 
     iframe {
       width: 100%;
-      height: 100%;
+      height: 100vh;
       border: none;
     }
 
@@ -72,42 +64,31 @@
         height: 100%;
         transform: translateX(-100%);
       }
-
-      .sidebar.active {
-        transform: translateX(0);
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      .main-content {
-        margin-left: 0;
-      }
+      .sidebar.active { transform: translateX(0); }
+      .menu-toggle { display: block; }
+      .main-content { margin-left: 0; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Cheeseburger Button -->
+  <!-- Hamburger Button -->
   <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-  <!-- Left Side Navigation -->
+  <!-- Sidebar -->
   <div class="sidebar" id="sidebar">
     <h2>Marvel Motors</h2>
-        <a href="homem.html" target="contentFrame">Home</a>
-    <a href="service3.html" target="contentFrame">Service</a>
-    <a href="About2.html" target="contentFrame">About</a>
-    <a href="Gallery marvel.html" target="contentFrame">Gallery</a>
-<a href="feed.html" target="contentFrame">Feedback</a>
+    <a href="home.html" target="contentFrame">Home</a>
+    <a href="service.html" target="contentFrame">Service</a>
+    <a href="About.html" target="contentFrame">About</a>
+    <a href="Gallery.html" target="contentFrame">Gallery</a>
+    <a href="feed.html" target="contentFrame">Feedback</a>
     <a href="FAQ.html" target="contentFrame">FAQ</a>
-
-
   </div>
 
-  <!-- Right Side Content -->
+  <!-- Main Content -->
   <div class="main-content">
-    <iframe name="contentFrame" src="homem.html"></iframe>
+    <iframe name="contentFrame" src="home.html"></iframe>
   </div>
 
   <script>
